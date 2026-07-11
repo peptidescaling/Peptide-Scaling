@@ -100,6 +100,16 @@ export const metadata: Metadata = {
 },
 };
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "MarketingAgency",
+  "name": "PeptideScaling",
+  "url": "https://www.peptidescaling.com",
+  "description": "Performance marketing agency for RUO peptide brands and telehealth clinics.",
+  "serviceType": ["Performance Marketing", "Peptide Brand Marketing", "Telehealth Marketing"],
+  "areaServed": "US"
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -107,6 +117,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </head>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );
