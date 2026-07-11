@@ -1041,7 +1041,7 @@ function Hero() {
           className="text-4xl sm:text-5xl lg:text-[4rem] xl:text-[4.5rem] font-black leading-[1.06] tracking-tight mb-6 overflow-hidden"
           style={{ color: DARK }}
         >
-          {"Do you run a RUO peptide or".split(" ").map((w, i) => (
+          {"Do you run === a RUO peptide or".split(" ").map((w, i) => (
             <span
               key={i}
               className="word inline-block mr-[0.22em]"
