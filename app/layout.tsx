@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  
   title: "PeptideScaling — Performance Marketing for Peptide Brands & Telehealth Clinics",
   description:
     "Performance marketing agency for RUO peptide brands and telehealth clinics. We scale ad campaigns, fix banned accounts, and build compliant infrastructure that survives Meta restrictions.",
@@ -94,6 +95,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+  google: "1eEVPZwrGHpNGtSOU4vrRZ5F94fpTSx-d03o2v8vR98",
+},
 };
 
 export default function RootLayout({
